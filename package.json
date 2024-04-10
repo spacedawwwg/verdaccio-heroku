@@ -1,0 +1,17 @@
+{
+  "name": "verdaccio-heroku",
+  "version": "1.0.0",
+  "description": "A private npm registry with Heroku",
+  "main": "package.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "dependencies": {
+    "verdaccio": "latest-6"
+  },
+  "engines": {
+    "node": "20.x",
+    "npm": "10.x"
+  }
+}

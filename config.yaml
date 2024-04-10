@@ -1,0 +1,25 @@
+storage: /verdaccio/storage
+auth:
+  htpasswd:
+    file: /verdaccio/conf/.htpasswd
+web:
+  title: Verdaccio Heroku
+uplinks:
+  npmjs:
+    url: https://registry.npmjs.org/
+packages:
+  '@*/*':
+    access: $all
+    publish: $authenticated
+    proxy: npmjs
+  '**':
+    access: $all
+    publish: $authenticated
+    proxy: npmjs
+middlewares:
+  audit:
+    enabled: true
+listen:
+  - 0.0.0.0:$PORT
+logs:
+  - {type: stdout, format: pretty, level: http}

@@ -1,0 +1,7 @@
+{
+  "name": "verdaccio-heroku",
+  "description": "A private npm registry with Heroku",
+  "repository": "https://github.com/spacedawwwg/verdaccio-heroku",
+  "keywords": ["verdaccio", "docker", "npm"],
+  "stack": "container"
+}
